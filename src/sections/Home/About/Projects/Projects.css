@@ -1,0 +1,78 @@
+
+.projects
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #E8D5C4;
+    text-align: center;
+} 
+.project1
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color:#F5EDE0;
+   margin: 30px;
+   max-width: fit-content;
+   margin-left: 15vw;
+}
+.proheading
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    color: #8B3A3A;
+}
+.btns
+{
+
+    margin-left: 200px;
+    
+}
+.probtn
+{
+    margin:20px;
+    text-align: center;
+    height: 40px;
+    width:120px ;
+    color: #E8D5C4;
+    background-color: #8B3A3A;
+    border-radius: 15px;
+    font-size:20px;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+.probtn:hover{
+    background-color:#8B3A3A ;
+    color: #F5EDE0;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(139, 58, 58, 0.2);
+}
+.upperpro
+{
+    font-size: larger;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background-color:#8B3A3A;
+    color: #E8D5C4;
+    padding: 10px;
+    border-radius: 12px;
+}
+.prodesc
+{
+    max-width:700px;
+    height: 300px;
+}
+.proimage
+{
+    background-image: url(idk.png);
+    height: 200px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

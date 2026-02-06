@@ -1,0 +1,30 @@
+
+.aboutbox
+{
+   background-color:burlywood; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+   padding: 40px;
+}
+.aboutimage
+{
+    height: 500px;
+    width: 400px;
+    background-image: url(idk.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.myintro
+{
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:monospace;
+  background-color: antiquewhite;
+  letter-spacing: 1px;
+  line-height: 27px;
+  padding: 20px;
+}

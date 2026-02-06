@@ -1,0 +1,49 @@
+.skills
+{
+    background-color:#E8D5C4 ;
+}
+.skillheading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-family:'Courier New', Courier, monospace;
+    color: #8B3A3A;
+}
+.skillbox
+{
+ display: flex;
+ flex-wrap:wrap;
+ justify-content: center;
+ text-align: center;
+ gap: 40px;
+ padding: 20px;
+  max-width: 500px;
+   margin: 0 auto;
+ 
+}
+.html
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F5EDE0 ;
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px;
+    text-transform: capitalize;
+    color: #8B3A3A;
+    border:2px solid #8B3A3A ;
+    height: 30px;
+    border-radius: 12px;
+    width: auto;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.html:hover{
+    background-color:#8B3A3A ;
+    color: #F5EDE0;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(139, 58, 58, 0.2);
+}
+
+/*#F5EDE0 #8B3A3A #E8D5C4*/
