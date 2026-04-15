@@ -26,7 +26,7 @@ export default function Contact()
   };
 
   return (
-    <form ref={formRef} onSubmit={sendEmail}>
+    <form  id="contact" ref={formRef} onSubmit={sendEmail}>
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required />

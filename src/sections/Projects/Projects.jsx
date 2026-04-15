@@ -1,8 +1,12 @@
 import "./Projects.css"
 export default function Projects()
 {
+    const openLink=(url)=>
+    {
+        window.open(url,"_blank");
+    };
  return<>
- <div className="projects">
+ <div id="projects" className="projects">
     <div className="proheading">
     <h2>Projects</h2>
     </div>
@@ -11,13 +15,13 @@ export default function Projects()
             <div className="upperpro">
             <div className="proimage"></div>
             <div className="prodesc">
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas debitis aliquam magnam inventore similique fugiat quos numquam, aperiam sunt quas! Suscipit doloremque facere sit autem ex consequatur unde quibusdam? Dolor?
+<p>The **Disease Detection System** takes basic health details as input and predicts whether a person may have a particular disease, helping them understand their condition early.
                      </p>
             </div>
             </div>
             <div className="btns">
-                <button className="probtn">Go-live</button>
-                <button className="probtn">Code</button>
+                <button onClick={()=>openLink("https://disease-detection-system-production.up.railway.app/")} className="probtn">Go-live</button>
+                <button onClick={()=>openLink("https://github.com/Mash4-4-4-4/Disease-Detection-System")} className="probtn">Code</button>
             </div>
             </div>
         
@@ -26,8 +30,7 @@ export default function Projects()
             <div className="upperpro">
             <div className="proimage"></div>
             <div className="prodesc">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, impedit sunt. Earum dignissimos voluptatibus voluptates nobis non. Ex est rem voluptate odio placeat enim officia corrupti iste magnam labore? Deserunt.
-                      </p>
+                <p>The **Disease Detection System** takes basic health details as input and predicts whether a person may have a particular disease, helping them understand their condition early.</p>
             </div>
             </div>
             <div className="btns">

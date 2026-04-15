@@ -1,0 +1,98 @@
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+  background: radial-gradient(circle at top, #0b0f1a, #05070d);
+  color: #e6ecff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR CONTAINER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+
+  position: sticky;
+  top: 0;
+
+  backdrop-filter: blur(12px);
+  background: rgba(10, 14, 25, 0.6);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  animation: navDrop 0.8s ease-out;
+  z-index: 1000;
+}
+
+/* NAV DROP ANIMATION */
+@keyframes navDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LOGO */
+.navimage {
+  height: 45px;
+  width: 45px;
+  background-image: url("idk.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  filter: drop-shadow(0 0 8px rgba(120, 150, 255, 0.6));
+  transition: transform 0.4s ease;
+}
+
+.navimage:hover {
+  transform: rotate(-5deg) scale(1.08);
+}
+
+/* NAV LINKS CONTAINER */
+.sections {
+  display: flex;
+  gap: 30px;
+}
+
+/* LINKS */
+.section1 a {
+  text-decoration: none;
+  color: #cfd8ff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  position: relative;
+  padding: 5px 0;
+
+  transition: color 0.3s ease;
+}
+
+/* UNDERLINE EFFECT */
+.section1 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 2px;
+
+  background: linear-gradient(90deg, #7aa2ff, #c084fc);
+  transition: width 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.section1 a:hover {
+  color: #ffffff;
+}
+
+.section1 a:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,209 @@
+/* BACKGROUND SPACE */
+.home {
+  min-height: 102vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(circle at top, #0b0f1a, #05070d);
+  overflow: hidden;
+}
+
+/* FLOATING CARD */
+.box {
+  padding: 40px;
+  border-radius: 20px;
+
+  background: rgba(15, 20, 35, 0.6);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+  transition: all 0.8s ease;
+}
+
+/* SCROLL APPEAR */
+.box.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* IMAGE FLOATING LIKE IN SPACE */
+.homeimage {
+  background-image: url("idk.png");
+  height: 220px;
+  width: 220px;
+  margin: auto;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  filter: drop-shadow(0 0 25px rgba(120, 150, 255, 0.5));
+
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* TEXT */
+.label {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+
+  color: #e6ecff;
+  letter-spacing: 3px;
+
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* TEXT BASE */
+.label span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+/* ENTER ANIMATION */
+.label span.enter {
+  animation: slideFadeIn 0.5s ease forwards;
+}
+
+/* EXIT ANIMATION */
+.label span.exit {
+  animation: slideFadeOut 0.3s ease forwards;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes slideFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+    filter: blur(6px);
+  }
+}
+
+/* BUTTONS */
+.choose {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.choose .btn {
+  height: 45px;
+  width: 150px;
+
+  background: transparent;
+  color: #cfd8ff;
+
+  border: 1px solid rgba(120, 150, 255, 0.4);
+  border-radius: 25px;
+
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+.choose .btn:hover {
+  background: rgba(120, 150, 255, 0.15);
+  color: white;
+
+  box-shadow: 0 0 12px rgba(120, 150, 255, 0.5);
+  transform: translateY(-3px);
+}
+
+/* ICON LINKS */
+.links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 24px;
+}
+
+.links i {
+  color: #9fb3ff;
+  transition: all 0.3s ease;
+}
+
+/* ICON HOVER */
+.links i:hover {
+  color: white;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(120, 150, 255, 0.8);
+}
+.side-text {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 8px;
+
+  color: rgba(255, 255, 255, 0.06);
+
+  opacity: 0;
+  transition: all 0.6s ease;
+
+  z-index: 1000; /* 👈 always on top */
+  pointer-events: none;
+}
+
+.side-text.visible {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+.skills-text {
+  left: 40px;
+}
+.projects-text
+{
+  right: 40px;
+}
+/* EACH WORD */
+.side-text span {
+  line-height: 1.1;
+  transition: all 0.5s ease;
+}
+
+/* OPTIONAL GLOW ON SCROLL */
+.side-text.visible span {
+  text-shadow: 0 0 20px rgba(120, 150, 255, 0.15);
+}
+/* FLOATING IMAGE (SHARED ELEMENT) */

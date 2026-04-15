@@ -1,0 +1,46 @@
+.about {
+   min-height: 102vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(circle at top, #0b0f1a, #05070d);
+  overflow: hidden;
+ 
+}
+.about {
+  position: relative;
+  z-index: 1; /* REQUIRED for locking */
+}
+
+.aboutbox {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+
+  padding: 50px;
+  border-radius: 20px;
+
+  background: rgba(15, 20, 35, 0.6);
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* TEXT */
+.myintro {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #dbe4ff;  
+letter-spacing: 1px;
+}
+.myintro p{
+font-family: 'JetBrains Mono', monospace;}
+
+/* REMOVE OLD IMAGE SPACE BUT KEEP GAP */
+.aboutbox::before {
+  content: "";
+  width: 250px; /* space where image lands */
+}

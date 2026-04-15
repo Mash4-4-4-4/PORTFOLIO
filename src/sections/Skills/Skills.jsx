@@ -2,7 +2,7 @@ import "./Skills.css"
 export default function Skills()
 {
     return<>
-      <div className="skills">
+      <div id="skills" className="skills">
         <div className="skillheading"><h1>skills</h1></div>
         <div className="skillbox">
         <div className="html">Java</div>

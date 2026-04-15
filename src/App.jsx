@@ -1,10 +1,10 @@
 
-import Home from "./sections/Home/About/Home/Home"
-import Navbar from "./components/navbar/Navbar/Navbar"
-import About from "./sections/Home/About/About/About"
-import Skills from "./sections/Home/About/Skills/Skills"
-import Projects from "./sections/Home/About/Projects/Projects"
-import Contact from"./sections/Home/About/Contact/Contact"
+import Home from "./sections/Home/Home"
+import About from "./sections/About/About"
+import Projects from "./sections/Projects/Projects"
+import Skills from "./sections/Skills/Skills"
+import Contact from "./sections/Contact/Contact"
+import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/Footer/Footer"
 export default function App()
 {
